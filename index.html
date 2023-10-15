@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <form action="">
+            <div class="form_header">
+                Create Account
+            </div>
+            <div class="form">
+                <div class="input_field_fname">
+                    <label for="fname" class="label">First name<span class="required"> * </span></label>
+                    <input type="text" name="first-name" id="fname" class="input_field_1_styling"
+                        placeholder="Enter your first name" required>
+                </div>
+
+                <div class="input_field_lname">
+                    <label for="lname" class="label">Last name</label>
+                    <input type="text" name="last-name" id="lname" class="input_field_1_styling"
+                        placeholder="Enter your last name">
+                </div>
+
+                <div class="input_field_email">
+                    <label for="email" class="label">Email<span class="required"> * </span></label>
+                    <input type="email" name="email" id="email" class="input_field_1_styling"
+                        placeholder="Enter your email" required>
+                </div>
+
+                <div class="input_field_pwd">
+                    <label for="pwd" class="label">Password<span class="required"> * </span></label>
+                    <input type="password" name="password" id="pwd" class="input_field_1_styling"
+                        placeholder="Enter your password" required>
+                </div>
+
+                <div class="input_field_cpwd">
+                    <label for="cpwd" class="label">Confirm Password<span class="required"> * </span></label>
+                    <input type="password" name="confirm-password" id="cpwd" class="input_field_1_styling"
+                        placeholder="Enter your password again" required>
+                </div>
+
+                <div class="input_field_gender">
+                    <div class="label">Gender:</div>
+                    <div>
+                        <input type="radio" name="gender"><span class="radio_label_style">Male</span>
+                        <input type="radio" name="gender"><span class="radio_label_style">Female</span>
+                    </div>
+                </div>
+
+                <div class="input_field_hobbies">
+                    <div class="label">Hobbies:</div>
+                    <div style="display: flex;">
+                        <input type="checkbox" name="music" id="music">
+                        <label for="music"><span class="checkbox_label_style">Music</span></label>
+
+                        <input type="checkbox" name="sports" id="sports">
+                        <label for="sports"><span class="checkbox_label_style">Sports</span></label>
+
+                        <input type="checkbox" name="travel" id="travel">
+                        <label for="travel"><span class="checkbox_label_style">Travel</span></label>
+
+                        <input type="checkbox" name="movies" id="movies">
+                        <label for="movies"><span class="checkbox_label_style">Movies</span></label>
+                    </div>
+                </div>
+
+                <div class="input_field_source_income">
+                    <div class="label">Source of Income</div>
+                    <select name="source-of-income" id="" class="input_field_1_styling">
+                        <option value="employed">Employed</option>
+                        <option value="self-employed">Self Employed</option>
+                        <option value="full-time">Full Time</option>
+                        <option value="part-time">Part Time</option>
+                    </select>
+                </div>
+
+                <div class="input_field_income">
+                    <label for="income" class="label">Income</label>
+                    <div style="display: flex;">
+                        <input type="range" name="income" id="income" min="10000" max="100000" style="width: 200px;">
+                        <div class="income_range_box">20K</div>
+                    </div>
+                </div>
+
+                <div class="input_field_upload">
+                    <label for="picture" class="label">Upload Profile Picture</label>
+                    <input type="file" name="upload-picture" id="picture" class="upload_label_style">
+                </div>
+
+                <div class="input_field_age">
+                    <label for="age" class="label">Age</label>
+                    <input type="number" name="age" id="age" class="input_field_1_styling" placeholder="Enter your age">
+                </div>
+
+                <div class="input_field_textarea">
+                    <label for="text" class="label">Bio</label>
+                    <textarea name="" id="text" class="input_field_2_styling">vpsdvpsdk</textarea>
+                </div>
+            </div>
+            <div class="form_footer">
+                <div style="margin-left: 30px;">
+                    <i>* required</i>
+                </div>
+                <div style="margin-right: 30px;">
+                    <button type="submit" class="btn">Create</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
